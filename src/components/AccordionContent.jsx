@@ -8,7 +8,9 @@ export default function AccordionContext({ id, className, children }) {
     return (
         <div
             className={
-                isOpen ? `${className ?? ""} open` : "accordion-item-content"
+                isOpen
+                    ? `${className ?? " "} open`
+                    : `${className ?? " "} close`
             }
         >
             {children}
