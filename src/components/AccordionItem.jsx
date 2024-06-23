@@ -1,8 +1,3 @@
-export default function AccordionItem({ className, title, children }) {
-    return (
-        <li className={className}>
-            <h3>{title}</h3>
-            <div>{children}</div>
-        </li>
-    );
+export default function AccordionItem({ className, children }) {
+    return <li className={className}>{children}</li>;
 }
